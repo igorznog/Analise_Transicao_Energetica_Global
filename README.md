@@ -1,4 +1,4 @@
-# 🚚 Delivery Cancellation Analysis & Logistics Dashboard
+ # 🚚 Delivery Cancellation Analysis & Logistics Dashboard
 
 ## 📌 Sobre o Projeto
 
@@ -9,6 +9,41 @@ A análise foi realizada utilizando mais de 100 mil registros de pedidos, explor
 Além da análise exploratória, o projeto também conta com um dashboard executivo desenvolvido no Power BI, permitindo visualização interativa dos principais KPIs e insights do negócio.
 
 O projeto também inclui uma etapa de Machine Learning para previsão de cancelamentos, simulando um cenário real de aplicação de Data Science no setor logístico.
+
+---
+
+# 📂 Dataset Utilizado
+
+O dataset utilizado contém informações operacionais de pedidos realizados em uma plataforma de delivery.
+
+## 📌 Principais colunas do dataset
+
+- Order_ID
+- User_ID
+- Restaurant_ID
+- Driver_ID
+- Item_Name
+- Quantity
+- Total_Price
+- Order_Time
+- Delivery_Time
+- Delivery_Duration_Minutes
+- City
+- Payment_Method
+- Order_Status
+- Driver_Vehicle
+- Delivery_Distance_km
+- Traffic_Level
+- Driver_Availability
+
+---
+
+## 📌 Informações gerais
+
+- Mais de 100 mil registros
+- Dados logísticos e operacionais
+- Variáveis categóricas e numéricas
+- Dados relacionados a pedidos, entregadores e clientes
 
 ---
 
