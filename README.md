@@ -172,7 +172,9 @@ O dashboard foi desenvolvido com foco executivo e operacional, permitindo análi
 
 # 📸 Preview do Dashboard
 
-![Dashboard Preview](images/dashboard_preview.jpeg)
+Imagem do dashboard disponível no repositório:
+
+- dashboard_preview.jpeg
 
 ---
 
@@ -213,12 +215,11 @@ Um vídeo demonstrando a navegação e interação com o dashboard está dispon�
 
 ```bash
 📁 delivery-cancellation-analysis
- ├── 📄 delivery_analysis.ipynb
- ├── 📄 delivery_dashboard.pbix
- ├── 📄 dataset.csv
- ├── 📄 dashboard_demo.mp4
- ├── 📁 images
- │    └── 📄 dashboard_preview.jpeg
+ ├── 📄 Análise_Operacional_de_Delivery.ipynb
+ ├── 📄 Dashboard.pbix
+ ├── 📄 dashboard_preview.jpeg
+ ├── 📄 Dashboard-video.mp4
+ ├── 📄 base_operacional_delivery_talabat.csv
  ├── 📄 dashboard-link.md
  └── 📄 README.md
 ```
