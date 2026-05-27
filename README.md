@@ -1,22 +1,22 @@
- # 🚚 Delivery Cancellation Analysis & Logistics Dashboard
+# 🚚 Análise de Cancelamentos e Tempo de Entrega em Delivery
 
 ## 📌 Sobre o Projeto
 
-Este projeto foi desenvolvido com o objetivo de analisar os principais fatores que impactam cancelamentos e desempenho operacional em plataformas de delivery.
+Este projeto foi desenvolvido com o objetivo de analisar os principais fatores que impactam cancelamentos de pedidos e desempenho operacional em plataformas de delivery.
 
-A análise foi realizada utilizando mais de 100 mil registros de pedidos, explorando métricas operacionais, padrões de comportamento e variáveis logísticas.
+Utilizando um dataset com mais de 100 mil registros operacionais, o projeto explora padrões logísticos, eficiência operacional, impacto do trânsito, performance das entregas e comportamento dos cancelamentos através de técnicas de Data Analytics, Business Intelligence e Machine Learning.
 
-Além da análise exploratória, o projeto também conta com um dashboard executivo desenvolvido no Power BI, permitindo visualização interativa dos principais KPIs e insights do negócio.
+Além da análise exploratória, também foi desenvolvido um dashboard interativo no Power BI para fornecer insights executivos e monitoramento operacional dinâmico.
 
-O projeto também inclui uma etapa de Machine Learning para previsão de cancelamentos, simulando um cenário real de aplicação de Data Science no setor logístico.
+O projeto inclui ainda uma etapa de Machine Learning voltada para previsão de cancelamentos, simulando um cenário real de negócio onde os dados são utilizados não apenas para entender problemas, mas também para antecipar riscos operacionais.
 
 ---
 
-# 📂 Dataset Utilizado
+# 📂 Informações do Dataset
 
-O dataset utilizado contém informações operacionais de pedidos realizados em uma plataforma de delivery.
+O dataset utilizado contém informações operacionais e logísticas de uma plataforma de delivery.
 
-## 📌 Principais colunas do dataset
+## 📌 Principais Colunas do Dataset
 
 - Order_ID
 - User_ID
@@ -32,29 +32,36 @@ O dataset utilizado contém informações operacionais de pedidos realizados em 
 - Payment_Method
 - Order_Status
 - Driver_Vehicle
+- Restaurant_Lat
+- Restaurant_Lon
+- Customer_Lat
+- Customer_Lon
+- Driver_Lat
+- Driver_Lon
 - Delivery_Distance_km
 - Traffic_Level
 - Driver_Availability
 
 ---
 
-## 📌 Informações gerais
+## 📌 Informações Gerais
 
-- Mais de 100 mil registros
-- Dados logísticos e operacionais
-- Variáveis categóricas e numéricas
-- Dados relacionados a pedidos, entregadores e clientes
+- Mais de 100 mil registros de entregas
+- Dados operacionais e logísticos
+- Variáveis numéricas e categóricas
+- Dados relacionados a clientes, entregadores, restaurantes e pedidos
 
 ---
 
 # 🎯 Objetivos do Projeto
 
-- Identificar fatores relacionados aos cancelamentos de pedidos
-- Entender impactos de trânsito, distância e tipo de veículo
+- Analisar fatores relacionados aos cancelamentos de pedidos
+- Identificar fatores operacionais que impactam o tempo de entrega
+- Entender o impacto do trânsito na performance logística
 - Criar KPIs executivos para monitoramento operacional
-- Desenvolver visualizações interativas no Power BI
-- Aplicar técnicas de Machine Learning
-- Simular um cenário real de análise de dados aplicada a logística
+- Desenvolver dashboards interativos no Power BI
+- Aplicar técnicas de Machine Learning para análise preditiva
+- Simular um cenário real de negócio no setor logístico
 
 ---
 
@@ -67,36 +74,36 @@ O dataset utilizado contém informações operacionais de pedidos realizados em 
 
 ---
 
-# 📈 Principais Análises Realizadas
+# 📈 Análise Exploratória de Dados
 
-## 🔹 Taxa de cancelamento por cidade
-Identificação das cidades com maior percentual de pedidos cancelados.
+## 🔹 Taxa de Cancelamento por Cidade
+Identificação das cidades com maior percentual de cancelamentos.
 
-## 🔹 Cancelamento por nível de trânsito
+## 🔹 Tempo Médio de Entrega por Nível de Trânsito
 Análise do impacto operacional causado pelo tráfego.
 
-## 🔹 Tempo médio de entrega por veículo
-Comparação entre bicicletas, carros e motos.
+## 🔹 Tempo Médio de Entrega por Tipo de Veículo
+Comparação entre motos, bicicletas e carros.
 
-## 🔹 Relação entre distância e tempo de entrega
-Avaliação da influência logística nas entregas.
+## 🔹 Relação entre Distância e Tempo de Entrega
+Avaliação da eficiência logística e padrões operacionais.
 
-## 🔹 Distribuição dos status dos pedidos
+## 🔹 Distribuição dos Status dos Pedidos
 Visualização da proporção entre pedidos entregues e cancelados.
 
 ---
 
 # 🤖 Machine Learning
 
-Além da análise exploratória e do dashboard executivo, o projeto também contou com uma etapa de Machine Learning voltada para previsão de cancelamentos de pedidos.
+O projeto também inclui uma etapa de Machine Learning voltada para previsão de cancelamentos de pedidos.
 
-O objetivo foi simular um cenário real de negócio, onde modelos preditivos podem auxiliar empresas de delivery a antecipar problemas operacionais e reduzir perdas.
+O objetivo foi simular um cenário real de negócio, onde modelos preditivos ajudam empresas de delivery a antecipar problemas operacionais e reduzir perdas.
 
 ---
 
 ## 📌 Variável Target
 
-Foi criada a variável:
+Foi criada uma variável target chamada:
 
 ```python
 Target_Cancelled
@@ -104,14 +111,14 @@ Target_Cancelled
 
 Onde:
 
-- `1` → Pedido cancelado
-- `0` → Pedido entregue
+- `1` → Pedido Cancelado
+- `0` → Pedido Entregue
 
 ---
 
 ## 📌 Variáveis Utilizadas no Modelo
 
-As principais variáveis utilizadas foram:
+Principais variáveis utilizadas para predição:
 
 - Delivery_Distance_km
 - Traffic_Level
@@ -122,14 +129,14 @@ As principais variáveis utilizadas foram:
 
 ---
 
-## 📌 Etapas Realizadas
+## 📌 Etapas do Machine Learning
 
-- Tratamento de dados
-- Engenharia de atributos
-- Encoding de variáveis categóricas
-- Separação treino/teste
-- Treinamento do modelo
-- Avaliação de métricas
+- Limpeza de Dados
+- Engenharia de Features
+- Encoding de Variáveis Categóricas
+- Separação Treino/Teste
+- Treinamento do Modelo
+- Avaliação de Performance
 
 ---
 
@@ -141,7 +148,47 @@ Prever a probabilidade de cancelamento de pedidos com base em fatores operaciona
 
 ## 📌 Resultado
 
-O modelo permitiu identificar padrões relacionados aos cancelamentos, contribuindo para análises mais estratégicas e simulação de aplicações reais de Data Science no setor logístico.
+O modelo preditivo permitiu identificar padrões operacionais relacionados aos cancelamentos e demonstrou como técnicas de Machine Learning podem auxiliar na tomada de decisão em operações logísticas.
+
+---
+
+# 📊 Dashboard Power BI
+
+O dashboard foi desenvolvido com foco executivo e operacional, permitindo análises dinâmicas e interativas através de filtros e KPIs.
+
+---
+
+## 🔹 Funcionalidades do Dashboard
+
+- Filtros por cidade
+- Filtros por veículo
+- Filtros por trânsito
+- Filtros por método de pagamento
+- KPIs executivos
+- Gráficos interativos
+- Insights operacionais
+
+---
+
+# 📸 Preview do Dashboard
+
+![Dashboard Preview](images/dashboard_preview.jpeg)
+
+---
+
+# 🎥 Demonstração do Dashboard
+
+Um vídeo demonstrando a navegação e interação com o dashboard está disponível neste repositório.
+
+---
+
+# 📌 Principais Insights
+
+- A taxa de cancelamento permaneceu próxima de 10%
+- O nível de trânsito apresentou impacto operacional significativo
+- O tempo de entrega variou conforme trânsito e tipo de veículo
+- Algumas cidades apresentaram taxas de cancelamento acima da média geral
+- Distância e duração da entrega demonstraram padrões logísticos consistentes
 
 ---
 
@@ -169,68 +216,42 @@ O modelo permitiu identificar padrões relacionados aos cancelamentos, contribui
  ├── 📄 delivery_analysis.ipynb
  ├── 📄 delivery_dashboard.pbix
  ├── 📄 dataset.csv
+ ├── 📄 dashboard_demo.mp4
  ├── 📁 images
- ├── 📄 README.md
+ │    └── 📄 dashboard_preview.jpeg
+ ├── 📄 dashboard-link.md
+ └── 📄 README.md
 ```
-
----
-
-# 📊 Dashboard Power BI
-
-O dashboard foi desenvolvido com foco executivo e operacional, permitindo análise dinâmica através de filtros interativos.
-
-## 🔹 Funcionalidades
-
-- Segmentação por cidade
-- Segmentação por veículo
-- Segmentação por trânsito
-- Segmentação por método de pagamento
-- Visualização de KPIs executivos
-- Gráficos interativos
-
----
-
-# 📌 Principais Insights
-
-- A taxa de cancelamento ficou próxima de 10%
-- O trânsito apresentou impacto operacional relevante
-- O tempo médio de entrega permaneceu relativamente estável entre veículos
-- Algumas cidades apresentaram taxas de cancelamento superiores à média geral
-- A relação entre distância e tempo demonstrou comportamento operacional consistente
 
 ---
 
 # 🧠 Conclusão
 
-O projeto permitiu transformar dados operacionais em insights relevantes para tomada de decisão.
+Este projeto transformou dados operacionais de delivery em insights estratégicos para tomada de decisão.
 
-A utilização de análise exploratória, dashboards interativos e modelos preditivos possibilitou identificar padrões importantes relacionados aos cancelamentos e desempenho logístico.
+Através de análise exploratória, dashboards interativos e modelos preditivos, foi possível identificar padrões operacionais relacionados aos cancelamentos e desempenho logístico.
 
-Além do aspecto analítico, o projeto também simulou um cenário real de negócio, aplicando conceitos de Business Intelligence, visualização de dados, Machine Learning e análise operacional.
-
----
-
-# 📸 Dashboard Preview
-
-## 🔹 Adicione aqui prints do dashboard
-
-Exemplo:
-
-- KPIs principais
-- Análise por cidade
-- Análise operacional
-- Filtros interativos
+Além da análise técnica, o projeto simula um cenário real de logística, aplicando conceitos de Business Intelligence, Data Analytics, Machine Learning e monitoramento operacional.
 
 ---
 
-# 🔗 Contato
+# 🔗 Acesso ao Dashboard
 
-## 📌 LinkedIn
-Adicione aqui seu LinkedIn
+O link do dashboard online está disponível em:
 
-## 📌 GitHub
-Adicione aqui seu GitHub
+```bash
+dashboard-link.md
+```
 
 ---
 
-# ⭐ Projeto desenvolvido para fins de estudo e portfólio em Data Analytics, Business Intelligence e Machine Learning.
+# ⭐ Considerações Finais
+
+Projeto desenvolvido para estudo, portfólio e aplicação prática em:
+
+- Data Analytics
+- Business Intelligence
+- Machine Learning
+- Análise Logística
+
+---
